@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Screen_Ten"
+    android:orientation="vertical"
+    android:background="#40454E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/img_tro_ve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tro_ve"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo tài khoản"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDate"
+        android:text="Tên Của Bạn Là Gì?"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="50dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/khung_nhap"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/khung_nhap"
+            android:hint="Nhập Tên của bạn"
+            android:textColor="@color/white"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Thông tin này xuất hiện trên hồ sơ CatMusic của ban."
+        android:textColor="@color/white"
+        android:textSize="17sp"/>
+
+    <ImageView
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/vien"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Bằng việc nhấn vào “Tạo tài khoản”, bạn đồng ý với Điều khoản sử dụng của Name."
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Điều Khoản sử dụng"
+        android:textColor="#4CAF50"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Để tìm hiểu thêm về cách thức Name thu thập, sử dụng, chia sẻ và bảo vệ dữ liệu cá nhân của bạn, vui lòng xem Chính sách quyền riêng tư của Name."
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Chính sách quyền riêng tư"
+        android:textColor="#4CAF50"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Tôi không muốn nhận tin nhắn từ Name"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:id="@+id/myCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="45dp"
+            android:textSize="16sp"
+            android:checked="true"
+            android:gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Chia sẻ dữ liệu đăng ký của tôi với các nhà
+ cung cấp nội dung Name nhằm mục đích tiếp thị."
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:id="@+id/myCheckBoxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:checked="true"
+            android:gravity="center"
+
+            />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_tiepname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_xac_nhan"
+        app:backgroundTint="@null"
+        android:textStyle="bold"
+        android:text="Tạo Tài Khoản"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="ĐƯỢC BẢO VỆ BẰNG RECAPTCHA"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp"/>
+
+
+
+</LinearLayout>

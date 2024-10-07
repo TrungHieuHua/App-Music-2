@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TRANGCHU">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/choi_nhac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_above="@id/card"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/media_play">
+
+
+                <ImageView
+                    android:id="@+id/img_choi_nhac"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/img_choi_nhac"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_ten_bai_hat"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:gravity="left"
+                        android:text="Gone"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_ten_ca_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Rosé (Blackpink)"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_next_choi_nhac"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_next" />
+                 <ImageView
+                    android:id="@+id/img_play_choi_nhac"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toStartOf="@id/img_next_choi_nhac"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_play" />
+
+                <ImageView
+                    android:id="@+id/img_prev_choi_nhac"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@id/img_play_choi_nhac"
+                    android:src="@drawable/ic_prev" />
+
+                <SeekBar
+                    android:id="@+id/seebar_choi_nhac"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:thumbTint="@android:color/white"
+                    android:layout_below="@id/img_choi_nhac"/>
+
+            </RelativeLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            >
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+                android:id="@+id/bottom_nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/bottom_nav"
+                app:itemIconSize="30dp"
+                app:itemIconTint="@color/color_item_bottomnavigation"
+                app:itemTextColor="@color/color_item_bottomnavigation"
+                app:menu="@menu/menu_bottom_nav" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/btn_dk"
+        app:headerLayout="@layout/gd_header_nav_view"
+        app:itemIconTint="@color/color_item_bottomnavigation"
+        app:itemTextColor="@color/color_item_bottomnavigation"
+        app:menu="@menu/thong_tin_ca_nhan" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

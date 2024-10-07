@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:padding="16dp">
+
+    <EditText
+
+        android:id="@+id/edtMaLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã loại" />
+
+    <EditText
+
+        android:id="@+id/edtTenLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên loại" />
+
+    <EditText
+
+        android:id="@+id/edtMauTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Màu thể loại" />
+
+</LinearLayout>

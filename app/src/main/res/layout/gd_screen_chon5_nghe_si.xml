@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Screen_Chon5NgheSi"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#40454E">
+
+    <TextView
+        android:id="@+id/chon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn 5 nghệ sĩ bạn yêu thích."
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="45sp"
+    android:orientation="horizontal"
+    android:layout_marginTop="50sp"
+    android:background="@color/white">
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:hint="Tìm kiếm"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:background="@null"
+        android:padding="10sp"/>
+
+    <ImageView
+        android:layout_width="30sp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/micro"/>
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcViewchon5NgheSi"
+        android:layout_marginTop="130sp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_chon_tiep"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_xac_nhan"
+        app:backgroundTint="@null"
+        android:layout_gravity="center"
+        android:text="Tiếp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:layout_marginLeft="17dp">
+
+    <ImageView
+        android:id="@+id/backgroundcasi"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/stayloralbum" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taylor Swift"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        />
+
+</RelativeLayout>

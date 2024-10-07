@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navHomeAdmin"
+        android:title="Trang chủ"
+        android:enabled="true"
+        android:icon="@mipmap/trang_chu">
+    </item>
+    <item
+        android:id="@+id/navNghesi"
+        android:title="Nghệ sĩ"
+        android:enabled="true"
+        android:icon="@mipmap/casi">
+    </item>
+    <item
+        android:id="@+id/navLoainhac"
+        android:title="Loại nhạc"
+        android:enabled="true"
+        android:icon="@mipmap/thu_vien">
+    </item>
+    <item
+        android:id="@+id/navApp"
+        android:title="Ứng dụng"
+        android:enabled="true"
+        android:icon="@mipmap/premium">
+    </item>
+
+</menu>

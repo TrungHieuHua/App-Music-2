@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/album1"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New music Friday VN"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playlist của Catmusic"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

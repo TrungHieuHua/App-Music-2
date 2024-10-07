@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg">#40454E</color>
+    <color name="item_bg">#1C1C1E</color>
+    <color name="green">#FF31CD4A</color>
+    <color name="darkgray">#08080966</color>
+
+
+    //random màu
+
+<!--    <color name="random1">#FF8C00</color>-->
+    <color name="random2">#D2691E</color>
+    <color name="random3">#B8860B</color>
+    <color name="random4">#808000</color>
+    <color name="random5">#556B2F</color>
+<!--    <color name="random6">#228B22</color>-->
+    <color name="random7">#008080</color>
+    <color name="random8">#191970</color>
+    <color name="random9">#000080</color>
+    <color name="random10">#4B0082</color>
+    <color name="random11">#483D8B</color>
+    <color name="random12">#9400D3</color>
+    <color name="random13">#8B008B</color>
+    <color name="random14">#A0522D</color>
+    <color name="random15">#CD853F</color>
+    <color name="random16">#8B4513</color>
+    <color name="random17">#A52A2A</color>
+
+</resources>

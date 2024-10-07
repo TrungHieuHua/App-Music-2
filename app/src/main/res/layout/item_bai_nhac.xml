@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg"
+    >
+
+    <LinearLayout
+        android:background="@color/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/killthislove"
+            android:id="@+id/img_item_listnhac"/>
+
+        <LinearLayout
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTenNhac"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:text="Ten Bai Hat"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNgheSi"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:text="Ten nghe si"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgLove"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
